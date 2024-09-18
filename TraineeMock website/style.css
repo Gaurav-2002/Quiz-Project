@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    color: #fff;
+   
+}
+ 
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 20px 10%;
+     background: transparent;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; 
+}
+ 
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    filter: drop-shadow(0 0 5px #09001d);
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition:  .3s;
+}
+
+.navbar a:hover,
+.navbar a.active 
+{
+    color: #c40094;
+
+} 
+ 
+ .main{
+    min-height: 100vh;
+    background: url('bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .3s ease;
+} 
+
+
+
+.home{
+    
+      height: 100vh; 
+      width: 100%;
+      padding-left: 150px ;
+     display: flex;
+    justify-content: left;
+    align-items: center; 
+} 
+.home-content{
+    max-width: 600px; 
+    display: flex;
+    
+    align-items: left;
+    flex-direction: column;
+    
+    
+} 
+
+u{
+    color: red;
+}
+
+  .home-content h1 p {
+    font-size: 16px;
+    text-align: left;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    margin-bottom: 30px;
+} 
+
+.home-content h1{
+    font-size: 32px;
+    font-weight: 500;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+} 
+
+  /* .home-content .start-btn{
+    width: 100px;
+    height: 55px;
+    background-color: #007bff;
+    
+    outline: none;
+    border-radius: 6px;
+    
+    font-size: 18px;
+    
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+}  */
+button{
+background-color:white;
+color:white;
+text-decoration: none;
+border: 2px solid transparent;
+font-weight: bold;
+padding: 13px 30px;
+border-radius: 30px;
+transition: .4s;
+}
+/* 
+.home-content .start-btn:hover {
+    background: #09001d;
+    box-shadow: none;
+} */
+
+@keyframes runningText {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.about {
+    background: url('4.jpg') no-repeat;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px;
+    background-color: black;
+    border-radius: 8px;
+    animation: runningText 1.5s ease-out;
+    }
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+    color: white;
+}
+
+/* Optional: Add some styling for the paragraph at the end 
+/* #about p:last-child {
+    font-weight: bold;
+    color: #007bff;
+}
+
+
+
+
+
+Optional: Add some styling for the paragraph at the end 
+#about p:last-child {
+    font-weight: bold;
+    color: #007bff;
+}
+
+
+
+
+
+
+
+ Add these styles at the end of your existing CSS 
+.quiz {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.quiz-container {
+    text-align: center;
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.next-btn {
+    background-color: #c40094;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#score {
+    margin-top: 20px;
+    font-weight: bold;
+} 
